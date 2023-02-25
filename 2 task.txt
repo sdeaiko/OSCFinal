@@ -1,4 +1,4 @@
-----Direct----
+----Direct IP connection----
 
 ifconfig 
 
@@ -15,3 +15,4 @@ iptables-save | tee /etc/iptables/rules.v4
 export HTTP_PROXY=[username]:[password]@190.61.88.147:8081
 export HTTPS_PROXY=[username]:[password]@190.61.88.147:8081
 export FTP_PROXY=[username]:[password]@190.61.88.147:8081
+export NO_PROXY=localhost,127.0.0.1,::1 
