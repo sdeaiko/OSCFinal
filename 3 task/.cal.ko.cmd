@@ -1,0 +1,1 @@
+cmd_/home/cisco/calc/cal.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/cisco/calc/cal.ko /home/cisco/calc/cal.o /home/cisco/calc/cal.mod.o;  true
