@@ -7,7 +7,7 @@ sudo adduser sultan
 passwd 1234
 sudo adduser sayan
 passwd 1234
-sudo adduser alihan
+sudo adduser alikhan
 passwd 1234
 sudo adduser galymzhan
 passwd 1234
