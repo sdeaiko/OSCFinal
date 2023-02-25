@@ -1,0 +1,17 @@
+----Wired----
+
+ifconfig 
+
+----NAT----
+
+sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
+sudo sysctl -p
+sudo iptables -t nat -L -n -v --line-numbers
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+iptables-save | tee /etc/iptables/rules.v4
+
+----Via proxy----
+
+export HTTP_PROXY=[username]:[password]@190.61.88.147:8081
+export HTTPS_PROXY=[username]:[password]@190.61.88.147:8081
+export FTP_PROXY=[username]:[password]@190.61.88.147:8081

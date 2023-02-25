@@ -1,0 +1,15 @@
+sudo adduser madik
+passwd 1234
+id madik
+sudo usermod -aG sudo madik
+sudo visudo
+sudo adduser sultan
+passwd 1234
+sudo adduser sayan
+passwd 1234
+sudo adduser alihan
+passwd 1234
+sudo adduser galymzhan
+passwd 1234
+whoami madik
+logout
